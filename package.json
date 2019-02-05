@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --open",
+	"deploy": "aws s3 sync dist/ s3://clickncheck",
     "build": "webpack --mode production",
     "test": "jest"
   },
